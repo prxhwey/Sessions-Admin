@@ -24,8 +24,8 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "",     // this is what people actually see
-        type: 3,               // Custom
+        state: "Watching Sessions",     // this is what people actually see
+        type: 4,               // Custom
       },
     ],
   },
@@ -450,7 +450,7 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: false,
-    leveling: false,
+    leveling: true,
     moderation: true,
     logging: true,
     welcome: false,
