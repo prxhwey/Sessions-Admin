@@ -24,8 +24,8 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Made by prxhwey!",     // this is what people actually see
-        type: 4,               // Custom
+        state: "",     // this is what people actually see
+        type: 3,               // Custom
       },
     ],
   },
@@ -93,11 +93,11 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#000000 ",
+      secondary: "#000000 ",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
+      success: "#000000 ",
       error: "#ED4245",
       warning: "#FEE75C",
       info: "#3498DB",
@@ -449,8 +449,8 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
-    leveling: true,
+    economy: false,
+    leveling: false,
     moderation: true,
     logging: true,
     welcome: true,
@@ -458,22 +458,22 @@ export const botConfig = {
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
-    counter: true,
+    birthday: false,
+    counter: false,
 
     // Security and self-service systems.
     verification: true,
     reactionRoles: true,
-    joinToCreate: true,
+    joinToCreate: false,
 
     // Utility/quality-of-life modules.
-    voice: true,
-    search: true,
-    tools: true,
-    utility: true,
-    community: true,
-    fun: true,
-    music: true,
+    voice: false,
+    search: false,
+    tools: false,
+    utility: false,
+    community: false,
+    fun: false,
+    music: false,
   },
 };
 
