@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Watching Sessions",     // this is what people actually see
+        state: "",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -249,7 +249,7 @@ export const botConfig = {
     },
 
     // Default priority for new tickets.
-    defaultPriority: "none",
+    defaultPriority: "Low",
 
     // Category ID where closed tickets are archived.
     archiveCategory: null,
@@ -451,7 +451,7 @@ export const botConfig = {
     // Core systems.
     economy: false,
     leveling: false,
-    moderation: false,
+    moderation: true,
     logging: true,
     welcome: true,
 
